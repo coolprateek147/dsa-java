@@ -5,7 +5,7 @@ public class Pattern6 {
         int n = scn.nextInt();
         
         int nsp = 1;
-        int nst = n - 2;
+        int nst = n / 2 + 1;
         
         for(int i = 1; i <= n; i++){
             for(int j = 1; j <= nst; j++){
@@ -18,7 +18,7 @@ public class Pattern6 {
                 System.out.print("*\t");
             }
             System.out.println();
-            if(i < n - 2){
+            if(i <= n / 2){
                 nsp = nsp + 2;
                 nst = nst - 1;
             } else {
