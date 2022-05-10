@@ -1,3 +1,4 @@
+import java.util.*;
 public class ReverseOfArray {
     public static void main(String args[]) {
         Scanner scn = new Scanner(System.in);
@@ -13,7 +14,7 @@ public class ReverseOfArray {
         int right = arr.length - 1;
         
         while(left < right){
-            temp = arr[left];
+            int temp = arr[left];
             arr[left] = arr[right];
             arr[right] = temp;
             left++;
